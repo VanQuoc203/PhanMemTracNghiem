@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "573440404369",
+    "firebase_url": "https://quanlytracnghiem-61c0e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "quanlytracnghiem-61c0e",
+    "storage_bucket": "quanlytracnghiem-61c0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573440404369:android:c4c299d70beedf40e18830",
+        "android_client_info": {
+          "package_name": "com.example.quanlytracnghiem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByZDnz9dznVr0zIZfbBE3KPII-3vK_Ims"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
