@@ -5,41 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_activitys"
     tools:context=".activitys.QuanLyVPKhoa_activitys">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="10dp"
-            android:orientation="horizontal"
-            android:weightSum="10">
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
 
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/SearchView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginVertical="7dp"
-                android:layout_weight="10"
-                app:iconifiedByDefault="false" />
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/SearchView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="7dp"
+            android:layout_weight="6"
+            android:background="@drawable/backgroud_search"
+            app:iconifiedByDefault="false" />
 
-            <ImageButton
-                android:background="null"
-                android:id="@+id/ibtnSapxep"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="10dp"
-                android:layout_weight="1"
-                android:src="@drawable/add_icon" />
+        <ImageButton
+            android:id="@+id/ibtnSapxep"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/background_ibtn"
+            android:src="@drawable/sort_icon" />
 
-            <ImageButton
-                android:id="@+id/ibtnThem"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/plus_small_icon" />
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/ibtnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/background_ibtn"
+            android:src="@drawable/add_icon" />
+    </LinearLayout>
+
+    <com.tsuryo.swipeablerv.SwipeableRecyclerView
+        android:id="@+id/SwipRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

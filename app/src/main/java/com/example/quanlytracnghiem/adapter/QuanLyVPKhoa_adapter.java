@@ -11,34 +11,38 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.quanlytracnghiem.R;
 import com.example.quanlytracnghiem.models.VPKhoa;
-import com.example.quanlytracnghiem.viewhoders.QuanLyVPKhoaViewholder;
+import com.example.quanlytracnghiem.viewhoders.QuanLyVPKhoa_viewhoder;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuanLyVPKhoaAdapter extends RecyclerView.Adapter<QuanLyVPKhoaViewholder> {
+public class QuanLyVPKhoa_adapter extends RecyclerView.Adapter<QuanLyVPKhoa_viewhoder> {
     private Context context;
     private ArrayList<VPKhoa> datalist;
 
-    public QuanLyVPKhoaAdapter(Context context, ArrayList<VPKhoa> datalist) {
+    public QuanLyVPKhoa_adapter(Context context, ArrayList<VPKhoa> datalist) {
         this.context = context;
         this.datalist = datalist;
     }
 
     @NonNull
     @Override
-    public QuanLyVPKhoaViewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public QuanLyVPKhoa_viewhoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items_quanlykhoa_layout, parent, false);
-        return new QuanLyVPKhoaViewholder(view);
+        return new QuanLyVPKhoa_viewhoder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull QuanLyVPKhoaViewholder holder, int position) {
+    public void onBindViewHolder(@NonNull QuanLyVPKhoa_viewhoder holder, int position) {
         VPKhoa vpKhoa = datalist.get(position);
-        holder.tvMaKhoa.setText(vpKhoa.getMaKhoa());
-        holder.tvTenKhoa.setText(vpKhoa.getTenKhoa());
+        holder.tvDiaChi.setText("Địa chỉ  "+vpKhoa.getDiaChi());
+        holder.tvTenKhoa.setText("Tên khoa "+vpKhoa.getTenKhoa());
         holder.tvMoTa.setText(vpKhoa.getMoTaKhoa());
         Glide.with(context).load(vpKhoa.getImagesKhoa()).into(holder.ivImages);
+    }
+    public void SearchData(ArrayList<VPKhoa> search){
+        datalist = search;
+        notifyDataSetChanged();
     }
 
     @Override

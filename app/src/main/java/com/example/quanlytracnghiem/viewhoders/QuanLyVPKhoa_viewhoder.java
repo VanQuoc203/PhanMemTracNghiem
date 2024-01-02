@@ -9,14 +9,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlytracnghiem.R;
 
-public class QuanLyVPKhoaViewholder extends RecyclerView.ViewHolder {
-    public TextView tvMaKhoa , tvTenKhoa , tvMoTa ;
+public class QuanLyVPKhoa_viewhoder extends RecyclerView.ViewHolder {
+    public TextView tvDiaChi , tvTenKhoa , tvMoTa ;
     public ImageView ivImages;
-    public QuanLyVPKhoaViewholder(@NonNull View itemView) {
+    public QuanLyVPKhoa_viewhoder(@NonNull View itemView) {
         super(itemView);
-        tvMaKhoa = itemView.findViewById(R.id.tvMaKhoa);
+        tvDiaChi = itemView.findViewById(R.id.tvDiaChi);
         tvTenKhoa = itemView.findViewById(R.id.tvTenKhoa);
-        tvMoTa = itemView.findViewById(R.id.tvMoTaKhoa);
+        tvMoTa = itemView.findViewById(R.id.tvMoTa);
         ivImages = itemView.findViewById(R.id.ivImages);
 
     }
