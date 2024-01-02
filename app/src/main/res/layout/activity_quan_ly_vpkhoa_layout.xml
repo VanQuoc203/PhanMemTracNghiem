@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.QuanLyVPKhoa_activitys">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/SearchView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="7dp"
+                android:layout_weight="10"
+                app:iconifiedByDefault="false" />
+
+            <ImageButton
+                android:background="null"
+                android:id="@+id/ibtnSapxep"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/add_icon" />
+
+            <ImageButton
+                android:id="@+id/ibtnThem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/plus_small_icon" />
+        </LinearLayout>
+
+</LinearLayout>
